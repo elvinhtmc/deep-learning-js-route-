@@ -1,0 +1,47 @@
+html, body {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+} /* 初始化页面 */
+html {
+  background: url(./imgs/background.jpg)  no-repeat;
+  background-size: cover;
+  /*background-size:auto/hover... or width/height  */
+}
+.keys {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: center;
+  min-height: 100vh; /* 将flex父容器拉伸到页面高，呈现居中效果 */
+}
+.key {
+  flex: 1;
+  width: 100px;
+  border: 4px solid black;
+  border-radius: 10%;
+  margin: 1rem;
+  background:rgba(0,0,0,0.4);
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  text-shadow:0 0 5px black;
+  /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
+}
+.playing {
+  transform:scale(1.1);
+  border-color:#ffc600;
+  box-shadow: 0 0 10px #ffc600;
+}
+.key kbd {
+  display: block;/* 确保换行，因为下一个是span元素 */
+  font-size: 40px;
+}
+.key span {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color:#ffc600;
+  /* text-transform 属性控制文本的大小写。 */
+  /* capital首字母,uppercase仅大写，lowercase仅小写，inherit继承 */
+}
+
